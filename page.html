@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Series</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+
+        header {
+            background-color: #202020;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #333;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f5c518;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        main h2 {
+            font-family: 'Playfair Display', serif;
+            color: #f5c518;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin: 20px 0;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .images img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
+
+
+        footer {
+            background-color: #202020;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .author {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .subpage-link {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .subpage-link a {
+            text-decoration: none;
+            color: #f5c518;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .subpage-link a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Favorite Series</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="subpage1.html">Gilmore Girls</a></li>
+            <li><a href="subpage2.html">Teen Wolf</a></li>
+            <li><a href="subpage3.html">Night Agent</a></li>
+        </ul>
+        <div>
+            <select>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+    </nav>
+    <main>
+        <h2>Introduction to My Top Series</h2>
+        <div class="content">
+            Here are three series that I absolutely adore. Each of these has captivated my attention with its storytelling, characters, and overall impact.
+        </div>
+        <div class="images">
+            <a href="subpage1.html"><img src="Gilmore_Girls.jpg" alt="Gilmore Girls" class="img-bw"></a>
+            <a href="subpage2.html"><img src="Teen_Wolf.jpg" alt="Teen Wolf" class="img-sepia"></a>
+            <a href="subpage3.html"><img src="Night_Agent.jpg" alt="Night Agent" class="img-blur"></a>
+        </div>
+        <div class="subpage-link">
+            <a href="subpage.html">Explore More</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Favorite Series | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
